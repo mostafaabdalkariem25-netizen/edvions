@@ -1,6 +1,6 @@
 import fetch from "node-fetch";
 
-const HF_API_KEY = "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";
+const HF_API_KEY = "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";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).json({ error: "Method Not Allowed" });
@@ -45,3 +45,4 @@ export default async function handler(req, res) {
     res.status(500).json({ plan: "❌ حصل خطأ أثناء توليد الخطة." });
   }
 }
+
